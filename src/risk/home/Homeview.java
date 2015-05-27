@@ -1,5 +1,6 @@
 package risk.home;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
@@ -18,6 +19,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
+import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
+
 
 public class Homeview extends JFrame {
 	/**
@@ -63,26 +67,25 @@ public class Homeview extends JFrame {
 
 
 	public static void addButtons() {
-		JPanel panel = new JPanel();
-		
 		panel.add(newgame);
 		panel.add(continuegame);
 		panel.add(highscores);
 		
-	
-		frame.add(newgame);
-		frame.add(continuegame);
-		frame.add(highscores);
-	}}
-	
+		frame.add(panel);
+		
+		
+	}
+
+public void newGame(){	
 	newgame.addActionListener(new ActionListener(){
 		public void actionPerformed(ActionEvent e){
 			frame.dispose();
 			Homeview theView = new Homeview();
 			Homemodel theModel = new Homemodel();
-			
+			Homecontroller theController = new Homecontroller(theView, theModel);
 		}
 	});
+}
 	
 
 }
