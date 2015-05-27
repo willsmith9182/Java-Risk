@@ -10,7 +10,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Homeview theView = new Homeview();
 		Homemodel theModel = new Homemodel();
-		Homecontroller theController = new Homecontroller(theView, theModel);
+		//Homecontroller theController = new Homecontroller(theView, theModel);
 	}
 
 }

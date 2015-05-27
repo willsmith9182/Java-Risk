@@ -23,6 +23,11 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 
 
+
+import risk.creategame.CGmodel;
+import risk.creategame.CGview;
+
+
 public class Homeview extends JFrame {
 	/**
 	 * 
@@ -48,7 +53,15 @@ public class Homeview extends JFrame {
 		int width = (int) (screenSize.getWidth() / 8);
 		int height = (int) (screenSize.getHeight() / 8);
 		frame.setLocation(width, height);
+		addButtons();
 		
+		newgame.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				frame.dispose();
+				 CGview theView = new CGview();
+				  CGmodel theModel = new CGmodel();
+			}
+		});
 		
 			try {
 			 BufferedImage  img = ImageIO.read(new File("src/bg1.jpg")/*.getAbsoluteFile()*/);
@@ -58,7 +71,7 @@ public class Homeview extends JFrame {
 					e.printStackTrace();
 					//will only fire if picture not located
 			}
-			addButtons();
+			
 			frame.add(pic);
 			frame.show();
 
@@ -76,16 +89,8 @@ public class Homeview extends JFrame {
 		
 	}
 
-public void newGame(){	
-	newgame.addActionListener(new ActionListener(){
-		public void actionPerformed(ActionEvent e){
-			frame.dispose();
-			Homeview theView = new Homeview();
-			Homemodel theModel = new Homemodel();
-			Homecontroller theController = new Homecontroller(theView, theModel);
-		}
-	});
+
+
 }
 	
 
-}

@@ -8,13 +8,5 @@ import risk.home.*;
 
 public class Homemodel {
 
-	risk.creategame.CGview..addActionListener(new ActionListener(){
-		public void actionPerformed(ActionEvent e){
-			
-			Homeview theView = new Homeview();
-			Homemodel theModel = new Homemodel();
-			
-			
-		}
-	});
+	
 }
