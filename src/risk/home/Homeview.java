@@ -84,6 +84,7 @@ public class Homeview extends JFrame {
 		panel.add(continuegame);
 		panel.add(highscores);
 		
+		
 		frame.add(panel);
 		
 		
