@@ -1,4 +1,4 @@
-package risk.creategame;
+package risk.ui.models;
 
 public class CGmodel {
 	

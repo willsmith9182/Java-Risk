@@ -1,4 +1,4 @@
-package risk.creategame;
+package risk.ui.controllers;
 
 public class CGController {
 

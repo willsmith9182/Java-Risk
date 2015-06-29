@@ -1,4 +1,4 @@
-package risk.creategame;
+/*package risk.ui.views;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -19,6 +19,11 @@ import javax.swing.border.BevelBorder;
 import risk.player.player;
 
 public class CGview {
+	
+	
+	
+	
+	
 	JFrame frame = new JFrame();
 
 	public static JLabel text = new JLabel("Player name:");
@@ -53,10 +58,10 @@ public class CGview {
 		frame.setLocation(width, height);
 
 		
-		/*
+		
 		 * NOTE: drawPanel and drawPanel(S) are two seperate things,
 		 * should probably refactor this
-		 */
+		 
 		
 		
 		// make infomation
@@ -139,3 +144,4 @@ public class CGview {
 	}
 
 }
+*/

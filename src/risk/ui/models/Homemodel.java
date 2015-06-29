@@ -1,4 +1,4 @@
-package risk.home;
+package risk.ui.models;
 
 import java.awt.Frame;
 import java.awt.event.ActionEvent;

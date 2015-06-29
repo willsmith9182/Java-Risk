@@ -1,7 +1,7 @@
-package risk.home;
+/*package risk.ui.controllers;
 
-import risk.creategame.CGmodel;
-import risk.creategame.CGview;
+import risk.ui.models.CGmodel;
+import risk.ui.views.CGview;
 
 
 public class Homecontroller {
@@ -11,3 +11,4 @@ public class Homecontroller {
 	}
 
 }
+*/

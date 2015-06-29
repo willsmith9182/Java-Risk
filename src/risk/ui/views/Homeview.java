@@ -1,4 +1,4 @@
-package risk.home;
+/*package risk.ui.views;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -24,14 +24,13 @@ import javax.swing.border.LineBorder;
 
 
 
-import risk.creategame.CGmodel;
-import risk.creategame.CGview;
+import risk.ui.models.CGmodel;
 
 
 public class Homeview extends JFrame {
-	/**
+	*//**
 	 * 
-	 */
+	 *//*
 	private static final long serialVersionUID = 1L;
 	public static JFrame frame = new JFrame();
 	public static JPanel panel = new JPanel();
@@ -64,7 +63,7 @@ public class Homeview extends JFrame {
 		});
 		
 			try {
-			 BufferedImage  img = ImageIO.read(new File("src/bg1.jpg")/*.getAbsoluteFile()*/);
+			 BufferedImage  img = ImageIO.read(new File("src/bg1.jpg").getAbsoluteFile());
 			 JLabel piclabel = new JLabel(new ImageIcon(img));
 			 pic.add(piclabel);
 			} catch (IOException e) {
@@ -95,3 +94,4 @@ public class Homeview extends JFrame {
 }
 	
 
+*/
